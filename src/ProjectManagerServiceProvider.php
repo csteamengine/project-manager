@@ -28,5 +28,6 @@ class ProjectManagerServiceProvider extends ServiceProvider
         ]);
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->loadViewsFrom(__DIR__ . '/views', 'ProjectManager');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 }
