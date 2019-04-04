@@ -13,7 +13,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../LaravelExceptions/",
+            "url": "../laravel-exceptions/",
             "options": {
                 "symlink": true
             }

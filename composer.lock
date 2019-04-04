@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "364f5e4d6a3a1b214eb5e3ab637a1993",
+    "content-hash": "d2d402a13c0c34e5964355b7215ef48a",
     "packages": [
         {
             "name": "bensquire/php-color-extractor",
@@ -60,8 +60,8 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../LaravelExceptions",
-                "reference": "aaaeb625a014161ed7c6f1839f3fcda1ddd0342c",
+                "url": "../laravel-exceptions",
+                "reference": "becf62bb02b7db5cdcb8b1bb2597e54d54d0f9ad",
                 "shasum": null
             },
             "require": {
@@ -89,7 +89,7 @@
                     "Csteamengine\\LaravelExceptions\\": "src/"
                 },
                 "files": [
-                    "app/helpers.php"
+                    "src/helpers.php"
                 ]
             },
             "license": [
