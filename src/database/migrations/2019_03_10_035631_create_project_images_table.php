@@ -22,7 +22,6 @@ class CreateProjectImagesTable extends Migration
             $table->boolean('is_active')->default(1);
             $table->integer('order')->default(0);
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

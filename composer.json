@@ -27,6 +27,9 @@
     "require-dev": {
     },
     "autoload": {
+        "classmap": [
+            "src/database/migrations"
+        ],
         "psr-4": {
             "Csteamengine\\ProjectManager\\": "src/"
         }

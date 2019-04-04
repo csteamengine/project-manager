@@ -47,7 +47,7 @@ class ProjectController extends Controller
     public function create()
     {
         $project = new Project;
-        return view('backend.projects.create')->with(['project' => $project]);
+        return view('ProjectManager::backend.projects.create')->with(['project' => $project]);
     }
 
     /**
@@ -71,7 +71,7 @@ class ProjectController extends Controller
             'is_active'
         ));
 
-        return redirect()->route('admin.projects.edit', $project->id)->withFlashSuccess('Project Created');
+        return redirect()->route('projects.edit', $project->id)->withFlashSuccess('Project Created');
     }
 
     /**
@@ -96,12 +96,12 @@ class ProjectController extends Controller
         $project = Project::find($id);
 
         if($project == null){
-           return redirect()->route('admin.projects.index')->withFlashError('Project by that id does not exist');
+           return redirect()->route('projects.index')->withFlashError('Project by that id does not exist');
         }
 
         $images = $project->images()->get();
 
-        return view('backend.projects.edit')->with(['project'=>$project, 'images' => $images]);
+        return view('ProjectManager::backend.projects.edit')->with(['project'=>$project, 'images' => $images]);
     }
 
     /**
